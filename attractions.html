@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attractions for All</title>
+    <link rel="stylesheet" href="attractions.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Glove World">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tickets.html">Tickets</a></li>
+                <li><a href="attractions.html">Attractions</a></li>
+                <li><a href="pricing.html">Members</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-text">
+            <h1>Attractions for All</h1>
+            <p>Discover the magic and excitement of Glove World with attractions for visitors of all ages.</p>
+        </div>
+    </section>
+
+    <main>
+        <section id="attractions-list">
+            <h2>Our Attractions</h2>
+            <div class="ride-carousel">
+                <button class="prev" onclick="prevSlide()">&#10094;</button>
+                <div class="slides">
+                    <div class="slide">
+                        <img src="attraction1.jpg" alt="Attraction 1">
+                        <h3>SpongeBob's Jellyfish Adventure</h3>
+                        <p>Join SpongeBob on an exciting jellyfish-catching adventure.</p>
+                        <button>Learn More</button>
+                    </div>
+                    <div class="slide">
+                        <img src="attraction2.jpg" alt="Attraction 2">
+                        <h3>Patrick's Rockin' Roller Coaster</h3>
+                        <p>Experience the thrill of Patrick's rockin' roller coaster ride.</p>
+                        <button>Learn More</button>
+                    </div>
+                    <div class="slide">
+                        <img src="attraction3.jpg" alt="Attraction 3">
+                        <h3>Squidward's Symphony Swing</h3>
+                        <p>Swing along with Squidward in this musical adventure.</p>
+                        <button>Learn More</button>
+                    </div>
+                </div>
+                <button class="next" onclick="nextSlide()">&#10095;</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Glove World. All rights reserved.</p>
+    </footer>
+
+    <script>
+        var slideIndex = 0;
+
+        function showSlides() {
+            var slides = document.getElementsByClassName("slide");
+            for (var i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slides[slideIndex].style.display = "block";  
+        }
+
+        function nextSlide() {
+            slideIndex++;
+            if (slideIndex >= document.getElementsByClassName("slide").length) {
+                slideIndex = 0;
+            }
+            showSlides();
+        }
+
+        function prevSlide() {
+            slideIndex--;
+            if (slideIndex < 0) {
+                slideIndex = document.getElementsByClassName("slide").length - 1;
+            }
+            showSlides();
+        }
+
+        showSlides();
+    </script>
+</body>
+</html>
