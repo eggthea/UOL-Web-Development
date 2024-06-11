@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glove World</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Glove World">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="tickets.html">Tickets</a></li>
+                <li><a href="attractions.html">Attractions</a></li>
+                <li><a href="pricing.html">Members</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h1>Welcome to Glove World</h1>
+        <p>Dive into the vibrant world of Bikini Bottom with SpongeBob and his pals. Join us for an adventure like no other in Glove World!</p>
+    </section>
+
+    <section id="highlights">
+        <h2>Discover the top highlights of Glove World</h2>
+        <div class="highlight">
+            <img src="meetngreet.jpg" alt="Meet & Greet">
+            <h3>Meet 'n' Greets with SpongeBob SquarePants Characters</h3>
+            <p>Whether it's SpongeBob or Patrick, Squidward, or a supervillain such as Plankton, there are plenty of Meet 'n' Greets throughout Glove World where you can grab a photo that you'll cherish forever.</p>
+             <a href="meetngreets.html"><button>View all Meet 'n' Greets</button></a>
+        </div>
+        <div class="highlight">
+            <img src="attraction2.jpg" alt="Attractions">
+            <h3>Sponge-tastic Attractions</h3>
+            <p>Dive into the wonders of Bikini Bottom, journey through the whimsical realms of Goo Lagoon, set sail on a daring voyage with SpongeBob and his crew on Atlantis SquarePantis, and explore countless other aquatic adventures!</p>
+            <a href="attractions.html"><button>See all attractions</button></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Glove World. All rights reserved.</p>
+    </footer>
+</body>
+</html>
